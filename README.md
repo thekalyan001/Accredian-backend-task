@@ -9,8 +9,9 @@ OReselling is an Application in which folllowing functionality are included<br>
 
 
 #### create .env file on root and add following
-> 1. EMAIL_USER=yourgmail@gmail.com
-> 2. EMAIL_PASS=your gmail password
+> 1. DATABASE_URL="mysql://username:password@localhost:3306/DatabaseName"
+> 2. EMAIL_USER=yourgmail@gmail.com
+> 3. EMAIL_PASS=your gmail password
  
 <p>If above password giving <strong>Auth Error</strong> than follow below steps to generate password.</p>
   
