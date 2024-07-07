@@ -10,7 +10,7 @@ OReselling is an Application in which folllowing functionality are included<br>
 
 #### create .env file on root and add following
 
-> 1. execute this command in your MySql workbench 👉 <strong>create database accredian_refer</strong>
+> 1. execute this command in your MySql workbench 👉 <strong>create database DatabaseName</strong>
 >
 > 2. DATABASE_URL="mysql://username:password@localhost:3306/DatabaseName"
 > 3. EMAIL_USER=yourgmail@gmail.com
