@@ -23,6 +23,16 @@ app.post('/api/referme', async (req, res) => {
         return res.status(400).json({ error: 'Please enter all required fields' });
     }
 
+    // Check if the refereeEmail already exists
+    const existingReferral = await prisma.accredian.findUnique({
+      where: { refereeEmail },
+    });
+
+    if (existingReferral) {
+      return res.status(603).json({ error: 'Referee email already exists' });
+    }
+
+    
     const referral = await prisma.accredian.create({
       data: {
         referrerName,
